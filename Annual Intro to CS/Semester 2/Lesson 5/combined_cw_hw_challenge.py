@@ -28,7 +28,7 @@ def militaryTime(h, m, s, ampm):
         case "am":
             return f"{h}:{m}:{s}"
         case "pm":
-            return f"{h+12}:{m}:{s}"
+            return f"{0 if h == 12 else h+12}:{m}:{s}"
 
         case _:
             return "Invalid Meridiem Indicator (AM/PM)"
