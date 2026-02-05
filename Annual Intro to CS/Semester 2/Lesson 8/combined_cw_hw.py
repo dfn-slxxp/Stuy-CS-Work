@@ -18,6 +18,7 @@ def sumFromZeroToN(n):
 # Homework
 
 def sumDigits(n):
+    n = abs(n)
     count = 0
     while True:
         if n == 0:
